@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -13,14 +14,19 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
 }
+.header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
 
 .container {
     width: 90%;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.582);
     padding: 20px;
 }
 
@@ -40,4 +46,9 @@ audio {
 audio::-webkit-media-controls-panel {
     background-color: #fafafa;
     border-radius: 4px;
+}
+footer{
+    position: fixed;
+    bottom: 1px;
+    font-size: 15px;
 }
