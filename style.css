@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.logo {
+    width: 100% !important; /* Force the logo to be smaller */
+    max-width: 150px !important; /* Limit maximum size */
+    height: auto !important;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
