@@ -9,24 +9,35 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     font-family: Arial, sans-serif;
+    color: #333;
 }
 
 .container {
     width: 90%;
-    max-width: 300px;
+    max-width: 400px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .logo {
-    width: 100% !important; /* Force the logo to be smaller */
-    max-width: 150px !important; /* Limit maximum size */
-    height: auto !important;
+    width: 80%;
+    max-width: 200px;
+    margin-bottom: 15px;
 }
 
 audio {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #fafafa;
+    border-radius: 4px;
 }
