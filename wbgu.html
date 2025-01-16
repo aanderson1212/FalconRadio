@@ -16,6 +16,27 @@
     </div>
     <a class="github-button" href="https://github.com/aanderson1212/FalconRadio" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large"  style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.582);">View on GitHub</a>
     <a href="index.html" class="switch">Switch to Falcon Radio</a>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        // Check if the user has a preferred mode saved in localStorage
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            body.classList.add('dark-mode');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('dark-mode', 'disabled');
+            } else {
+                body.classList.add('dark-mode');
+                localStorage.setItem('dark-mode', 'enabled');
+            }
+        });
+    </script>
     <footer>
         <p>For an easier listening experience, especially on mobile.</p>
     </footer>
